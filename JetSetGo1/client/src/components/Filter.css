@@ -1,0 +1,47 @@
+.filter-panel {
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.filter-panel.open {
+    right: 0;
+}
+
+.heartboxwishlist {
+   
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%; /* Makes it circular */
+    cursor: pointer;
+    }
+    
+.heartboxwishlist i {
+      height: 18px;
+      width: 18px;
+      color: white;
+      transition: color 0.3s ease; /* Smooth color transition */
+    }
+    
+.heartboxwishlist:hover i {
+      color: yellow;
+    }
+
+.filter-panel h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.filter-panel p {
+    color: #666;
+}

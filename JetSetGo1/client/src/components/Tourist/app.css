@@ -1,0 +1,101 @@
+/* App.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #e8e8f3;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  
+  /* General styles for menu */
+  #menu {
+    width: 100%;
+  }
+  
+  .menu-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+  
+  .menu-text a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .menu-item.highlight {
+    background: #f4f4fc;
+  }
+  
+  .sub-menu {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #5a5a9b;
+  }
+  
+  .text .title {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .text .sub-text {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .bottom-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .bottom-container a {
+    color: #5a5a9b;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .bottom-container a:hover {
+    text-decoration: underline;
+  }
+  

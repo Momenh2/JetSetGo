@@ -1,0 +1,188 @@
+price-div {
+    margin-top: 10px;
+    padding: 15px;
+    
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    
+  }
+  
+  /* Heading */
+  .price-div h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Options container */
+  .price-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Label styling */
+  .price-options label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .price-options label:hover {
+    color: #007bff;
+  }
+  
+  /* Checkbox styling */
+  .price-options input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #007bff; /* Modern browsers for checkbox color */
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .price-div {
+      padding: 10px;
+    }
+  
+    .price-options {
+      gap: 6px;
+    }
+  
+    .price-options label {
+      font-size: 12px;
+    }
+  
+    .price-toggle {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  .rating-div {
+    margin-top: 12px;
+  }
+  
+  .rating-sort-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between sorting options */
+  }
+  
+  .sort-option {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .sort-option:hover {
+    transform: scale(1.1);
+  }
+  
+  .sort-option.selected {
+    font-weight: bold;
+    color: gold; /* Matches the full star color */
+  }
+  
+  
+  /* Container for the sliding page */
+  .filter-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .filter-container.open {
+    right: 0;
+  }
+  
+  /* Header Section */
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .filter-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Content Section */
+  .filter-content {
+    padding: 15px;
+  }
+  
+  .wishlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .wishlist-item:last-child {
+    border-bottom: none;
+  }
+  
+  .wishlist-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .wishlist-item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wishlist-item-info h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    color: #ff0000;
+  }
+  
+  .card-action.wishlist-added {
+    background-color: #eecf23; /* Yellow background */
+    color: #ffffff; /* White heart color */
+  }

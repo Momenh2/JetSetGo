@@ -1,0 +1,598 @@
+.home-gov {
+  padding: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+/* Search Bar Styling */
+/* Search Bar Styling */
+.filters-gov {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+
+
+
+.filter-btn-gov {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #0839b5;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter-btn-gov:hover {
+  background-color: #0056b3;
+}
+.SearchBarAndFiletr-gov{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+
+
+
+}
+.filter-button-gov {
+  width:50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  height: 44px;
+  padding: 10px 10px;
+  margin-top:13px ;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+
+
+  transition: background-color 0.3s ease;
+} 
+
+.search-bar-gov {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  position: relative; /* Ensure proper positioning for the icon */
+  margin-bottom: 20px;
+}
+
+.search-bar-gov input {
+  width: 100%;
+  padding: 10px 15px; /* Padding for text inside the input */
+  padding-right: 40px; /* Extra space for the icon */
+  /* border: 2px solid #ddd; */
+  border-radius: 20px;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar-gov input:focus {
+  border-color: #0073b1;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 115, 177, 0.3);
+}
+
+.search-bar-gov input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.search-icon-gov {
+  position: absolute;
+  right: 5%; /* Position the icon inside the input field */
+  color: #aaa;
+  font-size: 1.2em;
+  pointer-events: none; /* Prevent the icon from blocking input events */
+}
+
+.page-title-gov {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  
+}
+.tags-gov {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust width */
+  gap: 20px;
+}
+
+.histloc-card-container-gov {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.histloc-card-container-gov .card-gov {
+  width: 100%; /* Let the card size adapt to the container */
+  max-width: 250px; /* Prevent oversized cards */
+}
+
+
+
+
+
+.histloc-card-gov {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  transition: transform 0.2s ease;
+  width: 100%; /* Ensure cards stretch within the grid */
+  max-width: 350px; /* Optional: Set max-width to prevent overly large cards */
+  margin: 0 auto; /* Center align the cards */
+  position:relative
+}
+
+
+.histloc-card-gov:hover {
+  transform: scale(1.03);
+}
+
+.card-header-gov {
+  height: 180px; /* Set a consistent height for the image */
+  overflow: visible;
+  position: relative;
+}
+
+.card-image-gov {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop and scale the image appropriately */
+}
+
+.card-content-gov {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-title-gov {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-rating-gov {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  color: #ffc107;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.rating-stars-gov {
+  display: flex;
+  gap: 4px; /* Space between stars */
+}
+
+.star-gov {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.star-gov.full-gov {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gold'%3E%3Cpath d='M12 .587l3.668 7.568L24 9.423l-6 5.857 1.418 8.203L12 18.897l-7.418 4.586L6 15.28.001 9.423l8.332-1.268z'/%3E%3C/svg%3E");
+}
+
+.star-gov.half-gov {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gold'%3E%3Cpath d='M12 .587l3.668 7.568L24 9.423l-6 5.857 1.418 8.203L12 18.897V.587z'/%3E%3Cpath d='M12 18.897l-7.418 4.586L6 15.28.001 9.423l8.332-1.268z' fill='%23e0e0e0'/%3E%3C/svg%3E");
+}
+
+.star-gov.empty-gov {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e0e0e0'%3E%3Cpath d='M12 .587l3.668 7.568L24 9.423l-6 5.857 1.418 8.203L12 18.897l-7.418 4.586L6 15.28.001 9.423l8.332-1.268z'/%3E%3C/svg%3E");
+}
+
+.no-ratings-gov {
+  font-size: 1.1rem;
+  color: #888;
+  font-style: italic;
+}
+.card-description-gov {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+.card-location-gov {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-tags-gov {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-price-gov {
+  font-size: 1em;
+  /* font-weight: bold; */
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card-price-gov ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-price-gov li {
+  margin: 5px 0;
+}
+
+
+.view-more-btn-gov {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #0839b5;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 10px;
+}
+
+.view-more-btn-gov:hover {
+  background-color: #0839b5;
+}
+
+
+
+.card-action-gov {
+  float: right;
+  margin-top: -25px;
+  margin-right: 0px;
+  position: absolute; /* Allow free positioning */
+  bottom: -3px; /* Move halfway onto the image */
+  right: 0px; /* Slightly away from the right edge */
+  z-index: 2; /* Ensure it appears on top of the image */
+  width: 50px; /* Set a fixed width for a perfect circle */
+  height: 50px; /* Set a fixed height for a perfect circle */
+  background: #fff;
+  color: #0839b5;
+  border-radius: 50%; /* Ensures circular shape */
+  padding: 0; /* Remove padding to avoid distortion */
+  display: flex;
+  font-size: 15px;
+  justify-content: center; /* Center the icon */
+  align-items: center; /* Center the icon */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for elevation */
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+  
+.card-header-gov img {
+  width: 100%;
+  border-radius: 8px 8px 0 0; /* Rounded top corners for the image */
+}
+
+
+.card-action-gov :hover {
+  background: #0839b5;
+  color: #fff;
+}
+
+
+
+
+
+.modal-overlay-gov {
+  position: fixed;  /* Ensure it's fixed relative to the viewport */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Dim the background */
+  display: flex;
+  justify-content: center;  /* Center the modal horizontally */
+  align-items: center;      /* Center the modal vertically */
+  z-index: 999;             /* Ensure it's on top of everything else */
+}
+
+.modal-gov {
+  position: fixed;        /* Position fixed within the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* Center the modal perfectly */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;           /* Ensure modal is above overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.modal-gov h2 {
+  margin-bottom: 20px;
+}
+
+.modal-gov p {
+  margin-bottom: 20px;
+}
+
+.modal-actions-gov button {
+  width: 100px;
+  height: 50px ;
+  margin: 5px 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-actions-gov button:first-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-actions-gov button:first-child:hover {
+  background-color: #d32f2f;
+}
+
+.modal-actions-gov button:last-child {
+  background-color: #8b8b8b;
+  color: white;
+}
+
+.modal-actions-gov button:last-child:hover {
+  background-color: #767676;
+}
+
+
+.modal2-gov {
+position: fixed;        /* Position fixed within the viewport */
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);  /* Center the modal perfectly */
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+width: 500px;
+height: 700px ;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+z-index: 1000;           /* Ensure modal is above overlay */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.modal2-input-gov::-webkit-inner-spin-button,
+.modal2-input-gov::-webkit-outer-spin-button {
+-webkit-appearance: none; /* Remove spin buttons in Chrome/Safari */
+margin: 0;
+}
+
+.modal2-gov h2 {
+margin-bottom: 20px;
+}
+
+.modal2-gov p {
+margin-bottom: 20px;
+}
+
+.modal2-gov input,
+.modal2-gov textarea,
+.modal2-gov select {
+width: 100%; /* Ensure consistent sizing */
+margin: 5px 0; /* Add vertical spacing */
+padding: 5px; /* Add padding for better usability */
+border: 1px solid #ccc; /* Light gray border for better visibility */
+border-radius: 5px; /* Rounded corners */
+font-size: 14px; /* Improve readability */
+}
+
+.modal2-gov textarea {
+resize: vertical; /* Allow resizing only vertically */
+min-height: 100px; /* Set a minimum height */
+}
+
+.modal2-actions-gov button {
+width: 100px;
+height: 50px ;
+margin: 5px 20px 0px 20px;
+padding: 10px 20px;
+font-size: 1em;
+cursor: pointer;
+border: none;
+border-radius: 5px;
+}
+
+.modal2-actions-gov button:last-child {
+background-color: #8b8b8b;
+color: white;
+}
+
+.modal2-actions-gov button:last-child:hover {
+background-color: #767676;
+}
+
+.modal2-actions-gov button:first-child {
+background-color: #0839b5;
+color: white;
+}
+
+.modal2-actions-gov button:first-child:hover {
+background-color: #0c38a8;
+}
+
+
+.header-container-gov {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-bottom: 20px; /* Adjust spacing if needed */
+padding: 0 20px;
+}
+
+.page-title-gov {
+
+font-size: 24px;
+font-weight: bold;
+}
+
+.add-button-gov {
+background-color: #007bff; /* Button color */
+color: white;
+border: none;
+border-radius: 5px;
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+cursor: pointer;
+position: absolute;
+right:20px;
+top: 50%;
+transform: translateY(-50%);
+
+}
+
+.add-button-gov:hover {
+background-color: #0056b3; /* Hover effect */
+}
+
+
+
+.card-action-gov {
+float: right;
+margin-top: -25px;
+margin-right: 0px;
+position: absolute; /* Allow free positioning */
+bottom: -3px; /* Move halfway onto the image */
+right: 0px; /* Slightly away from the right edge */
+z-index: 2; /* Ensure it appears on top of the image */
+width: 50px; /* Set a fixed width for a perfect circle */
+height: 50px; /* Set a fixed height for a perfect circle */
+background: #fff;
+color: #0839b5;
+border-radius: 50%; /* Ensures circular shape */
+padding: 0; /* Remove padding to avoid distortion */
+display: flex;
+font-size: 15px;
+justify-content: center; /* Center the icon */
+align-items: center; /* Center the icon */
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for elevation */
+border: none;
+transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+.card-action-gov:hover {
+background: #0839b5;
+color: #fff;
+}
+
+
+.action-buttons-gov {
+display:flex ;
+position: absolute;
+right : 100px !important;
+top: 50%; /* Center vertically in the row */
+transform: translateY(-50%);
+z-index: 10; /* Ensure buttons appear above other elements */
+pointer-events: auto;
+visibility: visible;
+}
+
+
+.card-header-gov {
+  position: relative; /* Ensures absolute positioning works within */
+}
+
+.card-actions-container {
+  position: absolute;
+  width: 100%; /* Ensures full width for better control */
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; /* Ensures spacing between buttons */
+  padding: 10px;
+}
+
+.card-action-gov {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: #0839b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Adjust individual buttons */
+.card-action-gov.delete-btn {
+  position: absolute;
+  top: 21px;
+  right: -1px; /* Moves delete button to top right */
+}
+
+.card-action-gov.edit-btn {
+  position: absolute;
+  bottom: -160px;
+  right: 10px; /* Keeps edit button in bottom right */
+  width: 40px; /* Adjust for larger size */
+  height: 40px; /* Adjust for larger size */
+  font-size: 20px; /* Increase icon size if using an icon */
+}
+
+.card-action-gov:hover {
+  background: #0839b5;
+  color: #fff;
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden; /* Ensures elements don't go out of bounds */
+}
+
+.edit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,136 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    height: 100vh;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar.minimized {
+    width: 60px;
+}
+
+/* Hamburger button */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjusts the button position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    padding: 8px; /* Slightly increased padding to ensure the hamburger box fits */
+    transition: background-color 0.3s ease;
+    display: flex; /* Flexbox to center content */
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    display: flex; /* Center the hamburger lines */
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 2px;
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+/* Top line */
+.hamburger-inner::before {
+    top: -6px; /* Space between middle and top bar */
+    transition: top 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+/* Bottom line */
+.hamburger-inner::after {
+    top: 6px; /* Space between middle and bottom bar */
+    transition: top 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+/* Normal hamburger - show 3 lines */
+.sidebar.minimized .hamburger-inner {
+    transform: none;
+}
+
+.sidebar.minimized .hamburger-inner::before {
+    top: -6px;
+    transform: none;
+}
+
+.sidebar.minimized .hamburger-inner::after {
+    top: 6px;
+    opacity: 1;
+    transform: none;
+}
+
+/* When the sidebar is expanded (X icon) */
+.hamburger.open .hamburger-inner {
+    transform: rotate(45deg);
+}
+
+.hamburger.open .hamburger-inner::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.hamburger.open .hamburger-inner::after {
+    top: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style-type: none;
+    padding: 50px 0 0;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li:hover {
+    background-color: #34495e;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.sidebar.minimized .icon {
+    margin-right: 0;
+}
+
+.sidebar.minimized .sidebar-menu li span {
+    display: none;
+}
+.sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar-menu li a:hover {
+    text-decoration: underline;
+  }

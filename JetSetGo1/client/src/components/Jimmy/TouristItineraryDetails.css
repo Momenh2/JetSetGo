@@ -1,0 +1,24 @@
+/* Ensure the comments card has enough space and prevents overflow */
+.comments-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.comments-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.comments-card li {
+  margin-bottom: 10px;
+  white-space: normal; /* Allow comments to wrap to the next line */
+  overflow: visible; /* Ensure content is not hidden */
+  text-overflow: unset; /* Remove ellipsis if text overflows */
+}
+
+.comments-card li:hover {
+  background-color: #f0f0f0; /* Optional: Highlight comments on hover */
+}

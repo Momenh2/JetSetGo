@@ -1,0 +1,212 @@
+/* General container styling */
+.cart-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Header Progress Steps */
+.cart-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-progress div {
+    display: flex;
+    align-items: center;
+}
+
+.cart-progress div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cart-progress div.active span {
+    background-color: #005582; /* Updated color */
+}
+
+.cart-progress .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.cart-progress div.active ~ .line {
+    background-color: #005582; /* Updated color */
+    margin-bottom: 25px;
+}
+
+/* Cart Item List */
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-item-details h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-item-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+}
+
+/* Cart Item Quantity */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 120px; /* Set a fixed width for the quantity box */
+    justify-content: space-between; /* Ensure buttons are spaced out */
+    padding: 5px;
+    border: 1px solid #ccc; /* Optional: Add border around the quantity box */
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Button Styling */
+.cart-item-quantity button {
+    padding: 5px 10px;
+    font-size: 20px; /* Adjust font size to make buttons more visible */
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333; /* Make the button text color darker */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; /* Ensure the buttons have consistent width */
+    height: 30px; /* Ensure the buttons have consistent height */
+}
+
+/* Hover effect on buttons */
+.cart-item-quantity button:hover {
+    background-color: #f5f5f5;
+}
+
+/* Increase the button size a little if needed for better visibility */
+.cart-item-quantity button:focus {
+    outline: none; /* Remove outline when focused */
+    border-color: #005582; /* Change border color on focus */
+}
+
+/* Optional: Adjust spacing between button and quantity text */
+.cart-item-quantity span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Summary Section */
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.cart-summary h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-summary .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.cart-summary .summary-row strong {
+    color: #333;
+}
+
+.cart-summary .summary-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Checkout Button */
+.checkout-button {
+    display: block;
+    width: 100%;
+    background-color: #005582; /* Updated color */
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #003c5e; /* Darker shade for hover effect */
+}
+.remove-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.remove-button:hover {
+    color: darkred;
+}

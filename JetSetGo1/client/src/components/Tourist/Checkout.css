@@ -1,0 +1,341 @@
+/* General container styling */
+.checkout-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Progress Bar */
+.cart-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-progress div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-progress div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cart-progress div.active span {
+    background-color: #005582;
+}
+
+.cart-progress .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+/* Promo Code Section */
+.promo-code-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.promo-code-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.promo-code-section .promo-code-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.promo-code-section .apply-button {
+    background-color: #005582; /* Promo code apply button color */
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 10%;
+}
+
+.promo-code-section .apply-button:hover {
+    background-color: #003c5e; /* Darker shade for hover */
+}
+
+.promo-code-section .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.promo-code-section .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.cart-progress div.active ~ .line {
+    background-color: #005582;
+    margin-bottom: 40px;
+}
+
+/* Checkout Content */
+.checkout-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Delivery Address Section */
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.cart-summary h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.delivery-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    resize: none;
+}
+
+.delivery-textarea:focus {
+    outline: none;
+    border-color: #005582;
+    box-shadow: 0 0 5px rgba(0, 85, 130, 0.3);
+}
+
+/* Order Summary Section */
+.order-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.order-summary h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.summary-details {
+    margin-top: 15px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.summary-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Checkout Button */
+.checkout-button {
+    display: block;
+    width: 100%;
+    background-color: #005582;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #003c5e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .cart-progress div span {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .summary-row,
+    .order-item {
+        font-size: 14px;
+    }
+
+    .checkout-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+.payment-method-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .payment-method-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .payment-options label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .payment-options input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Address Dropdown and Add Button */
+.address-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .address-dropdown {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  .add-address-button {
+    background-color: #005582; /* Changed to #005582 */
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .add-address-button:hover {
+    background-color: #003c5e; /* Slightly darker for hover effect */
+  }
+  
+  /* Add Address Form */
+  .add-address-form {
+    margin-top: 20px;
+  }
+  
+  .add-address-input,
+  .add-address-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .save-address-button {
+    background-color: #005582;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .save-address-button:hover {
+    background-color: #003c5e;
+  }
+  
+  
+ /* Checkout Button */
+.checkout-button {
+    display: block;
+    width: 100%;
+    background-color: #005582; /* Changed to #005582 */
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #003c5e; /* Slightly darker for hover effect */
+}

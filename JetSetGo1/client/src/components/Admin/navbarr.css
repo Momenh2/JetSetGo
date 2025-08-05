@@ -1,0 +1,64 @@
+.navbarr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #295F98;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbarr-left h2 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .navbarr-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+  }
+  
+  .profile-icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    color: #ecf0f1;
+  }
+  
+  /* Notification Icon Section */
+  .notification-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+    
+  }
+  
+  .notification-icon {
+    font-size: 24px;
+    color: #E1D7C6; /* Change notification icon color to light blue */
+    cursor: pointer;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e74c3c; /* Red notification badge */
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  

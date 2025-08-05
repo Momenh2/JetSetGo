@@ -1,0 +1,32 @@
+.Authentication{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for input fields when an error occurs */
+.error-input {
+  border: 2px solid red;
+  background-color: #ffeeee;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Error message styling */
+.errore-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation for error messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

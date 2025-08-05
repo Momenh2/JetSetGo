@@ -1,0 +1,121 @@
+/* Complaint Section Container */
+.complaint-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  .complaint-header {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 16px;
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Back Link */
+  .complaint-back-link {
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .complaint-back-arrow {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
+  .complaint-back-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Page Title */
+  .complaint-page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Form Styling */
+  .complaint-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .complaint-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .complaint-form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .complaint-form-input,
+  .complaint-form-textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .complaint-form-input:focus,
+  .complaint-form-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .complaint-form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Submit Button */
+  .complaint-submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .complaint-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Messages */
+  .complaint-error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .complaint-success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  

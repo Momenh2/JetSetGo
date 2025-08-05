@@ -1,0 +1,198 @@
+/* Navbar styling */
+.navvvbar {
+    width: 100%;
+    height: 80px;
+    background-color: #fdf9f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navvvbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Menu styling */
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    position: relative; /* Position relative for submenu positioning */
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Submenu styling */
+.dropdown-submenu {
+    position: absolute;
+    top: 100%; /* Position below the main menu item */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 200px; /* Set minimum width */
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Show submenu on parent hover */
+.menu ul li:hover .dropdown-submenu {
+    display: flex; /* Display as flex column on hover */
+}
+
+/* Submenu item styling */
+.dropdown-submenu li {
+    padding: 12px 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-submenu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-submenu li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Profile link styling */
+.profile {
+    position: relative;
+}
+
+.profile-link {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    padding: 5px 12px;
+    transition: color 0.3s;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Dropdown list styling */
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dropdown item styling */
+.dropdown-menu li {
+    padding: 12px 16px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Divider styling */
+.dropdown-menu hr {
+    margin: 8px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+/* Menu item popup styling */
+.menu ul li {
+    position: relative; /* Relative positioning for each menu item */
+}
+
+.menu ul li .popup {
+    position: absolute;
+    top: 100%; /* Position it below the li element */
+    left: 0;
+    width: 200px; /* Set a width for the popup */
+    background-color: #fff; /* Background color for the popup */
+    border: 1px solid #ddd; /* Border for definition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 1000; /* Keep it above other elements */
+    display: none; /* Initially hidden */
+    padding: 10px; /* Padding for content inside the popup */
+}
+
+.menu ul li:hover .popup {
+    display: block; /* Show popup on hover */
+}
+
+.popup{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    
+}
+
+
+/* Popup content styling */
+.popup ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.popup li {
+    padding: 8px 10px; /* Inner padding for items */
+    transition: background-color 0.3s; /* Smooth background transition */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.popup li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    display: block; /* Make the entire item clickable */
+    font-size: 14px; /* Adjust font size */
+}
+
+.popup li:hover {
+    background-color: #f1f1f1; /* Background on hover */
+}

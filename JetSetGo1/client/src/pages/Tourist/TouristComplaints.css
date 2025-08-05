@@ -1,0 +1,210 @@
+table-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 16px;
+}
+
+
+.header-box {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 16px;
+  border: 2px solid #dddcdc; /* Border on all sides */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Back link styling */
+.back-link {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-arrow {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.back-link:hover {
+  color: #0056b3;
+}
+
+/* Add Complaint button styling */
+.backy-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.backy-button:hover {
+  background-color: #0056b3;
+}
+
+
+.table-controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.role-filter {
+  display: flex;
+  align-items: center;
+}
+
+.role-filter span {
+  margin-right: 8px;
+}
+
+.role-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table-wrapper {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.user-table th {
+  background-color: #f9f9f9;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-email {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.status-active {
+  background-color: #e6ffed;
+  color: #21a746;
+}
+
+.status-inactive {
+  background-color: #fff7e6;
+  color: #f5a623;
+}
+
+.status-offline {
+  background-color: #ffe6e6;
+  color: #d0021b;
+}
+
+.table-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.role-filter, .status-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-select, .role-select, .search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

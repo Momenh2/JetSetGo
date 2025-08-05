@@ -1,0 +1,66 @@
+.admin-dashboard {
+  display: flex;
+}
+.main-content {
+  flex-grow: 1;
+  
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.stat-card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 20%;
+}
+
+.dashboard-data {
+  margin-top: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+  gap: 20px; /* Adds space between the cards */
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+}
+

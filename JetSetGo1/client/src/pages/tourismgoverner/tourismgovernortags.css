@@ -1,0 +1,209 @@
+/* Main Container */
+.container-govtag {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header-govtag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-btn-govtag {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-btn-govtag:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+} */
+
+/* Modal Overlay */
+.modal-overlay-govtag {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal */
+.modal-govtag {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-govtag h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group-govtag {
+    margin-bottom: 15px;
+}
+
+.form-group-govtag label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group-govtag select,
+.form-group-govtag input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Modal Actions */
+.modal-actions-govtag {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.submit-btn-govtag {
+    background-color: #007bff;
+    margin: 50px 20px 0px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cancel-btn-govtag {
+    background-color: #6c757d;
+    margin: 50px 20px 0px 20px;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit-btn-govtag:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn-govtag:hover {
+    background-color: #5a6268;
+}
+
+/* Error Message */
+.error-govtag {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.modal-overlay-govtag {
+    position: fixed;  /* Ensure it's fixed relative to the viewport */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Dim the background */
+    display: flex;
+    justify-content: center;  /* Center the modal horizontally */
+    align-items: center;      /* Center the modal vertically */
+    z-index: 999;             /* Ensure it's on top of everything else */
+}
+
+.modal-govtag {
+    position: fixed;        /* Position fixed within the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the modal perfectly */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;           /* Ensure modal is above overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.custom-add-button-govtag {
+    max-height: 50px;
+    max-width: 50px;
+    position: absolute;
+    top: 125px; /* Adjust distance from the top */
+    right: 10px; /* Adjust distance from the right */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.modal-actions-govtag button {
+    width: 100px;
+    height: 50px ;
+    margin: 20px 20px 0px 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .submit-btn-govtag {
+    background-color: #007bff !important;
+    margin: 50px 20px 0px 20px;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cancel-btn-govtag {
+    background-color: #6c757d !important;
+    margin: 50px 20px 0px 20px;
+
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.tourist-profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .tourist-profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tourist-profile-container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .tourist-profile-container strong {
+    color: #333;
+  }
+  

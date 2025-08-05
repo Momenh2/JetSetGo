@@ -1,0 +1,98 @@
+/* Container for the search form and results */
+.accommodation-search {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the search form inputs and button */
+  .accommodation-search .search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .accommodation-search .search-form input[type="text"],
+  .accommodation-search .search-form input[type="date"],
+  .accommodation-search .search-form input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .accommodation-search .search-form button {
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .accommodation-search .search-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Style for the results section */
+  .accommodation-search .search-results {
+    margin-top: 20px;
+  }
+  
+  /* Each result item */
+  .accommodation-search .result-item {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .accommodation-search .result-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .accommodation-search .result-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Override existing styles */
+  html input[type="text"],
+  html input[type="date"],
+  html input[type="number"],
+  html button {
+    all: unset;
+  }
+  
+  .accommodation-search input[type="text"] {
+    display: inline-block !important;
+    background: white !important;
+  }
+  
+  .accommodation-search input[type="date"] {
+    display: inline-block !important;
+    background: white !important;
+  }
+  
+  .accommodation-search input[type="number"] {
+    display: inline-block !important;
+    background: white !important;
+  }
+  
+  .accommodation-search button {
+    display: inline-block !important;
+    background-color: #0071c2 !important;
+    color: white !important;
+    padding: 10px !important;
+    cursor: pointer !important;
+  }
+  

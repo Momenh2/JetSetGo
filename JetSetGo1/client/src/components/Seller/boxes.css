@@ -1,0 +1,18 @@
+.admin-dashboard {
+    display: flex;
+  }
+  .main-content {
+    flex-grow: 1;
+    
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stat-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+  }

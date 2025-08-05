@@ -1,0 +1,87 @@
+.user-card-adrev {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    padding: 20px;
+    max-width: 350px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.user-card-adrev:hover {
+    transform: translateY(-5px);
+}
+
+.user-card-adrev h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-card-adrev h5 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.user-card-adrev-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.user-card-adrev-link:hover {
+    text-decoration: underline;
+}
+
+.user-card-actions-adrev {
+    margin-top: 15px;
+    display: flex;
+}
+
+.accept-btn-adrev {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+.reject-btn-adrev {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+.accept-btn-adrev:hover {
+    opacity: 0.9;
+    background-color: rgb(1, 111, 1);
+}
+
+.reject-btn-adrev:hover {
+    opacity: 0.9;
+    background-color: rgb(229, 0, 0);
+}
+
+.user-cards-container-adrev {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Four columns, responsive /
+    gap: 20px; / Space between cards /
+    justify-content: center; / Center the grid */
+    padding: 10px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}

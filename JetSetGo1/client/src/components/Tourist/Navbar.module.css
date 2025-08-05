@@ -1,0 +1,276 @@
+/* NEEEEWWWW CSSSSSS */
+
+.navbarContainer {
+    
+    background: #012e58;
+    color: #ffc400;
+    height: 95px; /* Reduced from 100px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.navbar {
+    display: flex;
+    color: #ffc400;
+    gap: 30px;
+    justify-content: center;
+    align-items: center; /* Ensures vertical centering of items */
+    height: 75px; /* Reduced from 100px */
+    z-index: 3;
+}
+
+
+.menuItem {
+    color: black;
+    font-weight: 900;
+    transform-style: preserve-3d;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-basis: var(--item-width);
+    box-sizing: border-box;
+    padding: 0; /* Remove padding to avoid affecting centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    perspective: 150px; /* Reduced from 200px */
+    letter-spacing: 0.375px; /* Reduced from 0.5px */
+    height: 100%; /* Matches navbar height */
+}
+
+
+.menuText a {
+    font-size: 1.05em; /* Reduced from 1.4em */
+    color: #ffc400;
+    text-decoration: none;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.1); /* Reduced shadow */
+    transition: color 0.1s ease-out;
+    text-align: center;
+}
+
+.menuText a:hover {
+    color:  #ad8500;
+}
+
+.subMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: rgba(0,0,0,0.5);
+    border-radius: 7.5px; /* Reduced from 10px */
+    min-width: 20.625em; /* Reduced from 27.5em */
+    box-sizing: border-box;
+    z-index: 999;
+    margin-left: -3.75em; /* Reduced from -5em */
+    padding: 1.125em; /* Reduced from 1.5em */
+    background: white;
+    box-shadow: 0 1.5px 5px rgba(0,0,0,0.1), 0 1.5px 15px rgba(0,0,0,0.3); /* Reduced shadow */
+}
+
+.iconBox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0; /* Reduced from 0.5em */
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.iconBox:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    color: rgb(44 70 86);
+    font-size: 0.9375em; /* Reduced from 1.25em */
+    margin: 0 0.75em 0 0; /* Reduced from 1em */
+}
+
+.text .title {
+    font-weight: 500;
+    color: rgb(44 70 86);
+    margin: 0 0 0.1875em 0; /* Reduced from 0.25em */
+}
+
+.text .subText {
+    color: #3f3f3d;
+    font-size: 0.6em; /* Reduced from 0.8em */
+}
+
+.bottomContainer {
+    margin-top: 0.75em; /* Reduced from 1em */
+    text-align: right;
+}
+
+.bottomContainer a {
+    background: linear-gradient(90deg, #8ea4b166, #a3b5bf6b);
+    padding: 0.375em 0.75em; /* Reduced from 0.5em 1em */
+    border-radius: 75px; /* Reduced from 100px */
+    color: #2c4655bf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.subMenuContainer {
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    top: 1.875em; /* Reduced from 2.5em */
+    width: 100%;
+}
+
+.subMenuHolder {
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    width: 100%;
+}
+
+.subMenuBottom {
+    background: #d4e3ea70;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.75em; /* Reduced from 5em */
+}
+
+
+
+.logo {
+    font-size: 1.975em; /* Reduced from 2.5em */
+    font-weight: bold;
+    margin-right: 0.0em; /* Reduced from 1em */
+}
+
+.logoHighlight {
+    background-color: #eeda23; /* Keep the yellow background */
+    color: #184773; /* Solid white text */
+    padding: 0 15px; /* Adjust padding */
+    left: 7.5px; /* Adjust positioning */
+    position: relative;
+}
+.logoHighlight:hover {
+    background-color: #eeda23; /* Keep the yellow background */
+    color: #012e58; /* Solid white text */
+    padding: 0 15px; /* Adjust padding */
+    left: 7.5px; /* Adjust positioning */
+    position: relative;
+}
+
+.logoHighlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Reduced from -7px */
+    right: -5px; /* Reduced from -7px */
+    height: 5px; /* Reduced from 7px */
+    width: 5px; /* Reduced from 7px */
+    background-color: yellow;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 0;
+    padding-right: 112.5px; /* Reduced from 150px 
+} */
+
+.menuItem {
+    position: relative;
+    margin: 0 1.5px; /* Reduced from 2px */
+}
+
+.menuText a {
+    text-decoration: none;
+    font-size: 1.125em; /* Reduced from 1.5em */
+}
+
+.menuText a:hover {
+    color:  #ac8400;
+}
+
+.iconBox {
+    color: white;
+    cursor: pointer;
+}
+
+.iconBox:hover {
+    color: yellow;
+}
+
+.currencyChanger {
+    background-color:#012e58;
+    color:white;
+    border: none;
+    padding: 0.375em; /* Reduced from 0.5em */
+    border-radius: 3.75px; /* Reduced from 5px */
+    font-weight: bold;
+}
+
+.currencyChanger:hover {
+    background-color: #012e58;
+    /* background-color: #ffeb10; */
+    color: #d5dee8;
+}
+
+.iconBox {
+    cursor: pointer;
+    background-color: linear-gradient(135deg, #012e58, #012e58);
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0; /* Reduced from 0.5em */
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.iconBox:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    color: rgb(44 70 86);
+    font-size: 0.9375em; /* Reduced from 1.25em */
+    margin: 0 0.75em 0 0; /* Reduced from 1em */
+}
+
+.actions2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75em; /* Reduced from 1em */
+    font-size: 1.0625em; /* Reduced from 1.15em */
+    margin-left: auto;
+    justify-content: flex-end;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-right:10px;
+    font-size: 1.0625em;
+    
+}
+
+
+.currencyChanger, 
+.profileChanger, 
+.iconBox {
+    display: flex;
+    align-items: center;
+}
+
+.signUpbutton{
+    background-color: #ffc400;
+    color:black;
+    height:48px;
+    width: 100px;
+}
+.signUpbutton:hover{
+    background-color: #cc9c00;
+    color:black;
+    
+}
+

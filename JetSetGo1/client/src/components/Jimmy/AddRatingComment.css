@@ -1,0 +1,142 @@
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Back Button */
+.back-button {
+  font-size: 1.2rem;
+  color: #007bff;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  color: #0056b3;
+}
+
+/* Divider styling */
+.MuiDivider-root {
+  margin: 1.5rem 0;
+  background-color: #ddd;
+}
+
+/* Main Box Container */
+.MuiBox-root {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography styling */
+.MuiTypography-root {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.MuiTypography-body2 {
+  color: #757575;
+  font-size: 0.875rem;
+}
+
+/* Radio Buttons */
+.MuiRadio-root {
+  margin-right: 10px;
+}
+
+/* TextField Styling */
+.MuiTextField-root {
+  margin-bottom: 1rem;
+}
+
+.MuiInputBase-root {
+  font-size: 1rem;
+}
+
+.MuiInputLabel-root {
+  font-size: 1rem;
+}
+
+.MuiFormHelperText-root {
+  font-size: 0.875rem;
+  color: #ff6f61;
+}
+
+/* Button styling */
+.MuiButton-root {
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  transform: scale(1.05);
+}
+
+.MuiButton-contained {
+  background-color: #4caf50;
+  color: white;
+}
+
+.MuiButton-contained:hover {
+  background-color: #45a049;
+}
+
+.MuiButton-contained:disabled {
+  background-color: #ddd;
+  color: #bbb;
+}
+
+/* Alert Styling */
+.MuiAlert-root {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.MuiAlert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.MuiAlert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* CircularProgress */
+.MuiCircularProgress-root {
+  display: block;
+  margin: auto;
+  padding: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .MuiBox-root {
+    padding: 1rem;
+  }
+
+  .MuiTypography-root {
+    font-size: 1.1rem;
+  }
+
+  .back-button {
+    font-size: 1rem;
+  }
+
+  .MuiButton-root {
+    font-size: 0.9rem;
+  }
+}

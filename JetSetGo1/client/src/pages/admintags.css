@@ -1,0 +1,416 @@
+/* Main Container */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-btn-adtag {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-btn-adtag:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Modal Overlay */
+.modal-overlay-adtag {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal */
+.modal-adtag {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-adtag h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Modal Actions */
+.modal-actions-adtag {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.submit-btn-adtag {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cancel-btn-adtag {
+    background-color: #6c757d; 
+    color: white;
+    border: none;
+    margin: 10px 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delete-btn-adtag {
+    background-color: #ef0000;
+    color: white;
+    border: none;
+    margin: 10px 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit-btn-adtag:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn-adtag:hover {
+    background-color: #5a6268 !important;
+}
+
+
+.delete-btn-adtag:hover {
+    background-color: #e20000 !important;
+}
+
+/* Error Message */
+.error-adtag {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.modal-overlay-adtag {
+    position: fixed;  /* Ensure it's fixed relative to the viewport */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Dim the background */
+    display: flex;
+    justify-content: center;  /* Center the modal horizontally */
+    align-items: center;      /* Center the modal vertically */
+    z-index: 999;             /* Ensure it's on top of everything else */
+}
+
+.modal-adtag {
+    position: fixed;        /* Position fixed within the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the modal perfectly */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;           /* Ensure modal is above overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.custom-add-button-adtag {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: -20px;
+    margin-right: 50px;
+    position: absolute;
+    
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+
+/* General Row Styling */
+.table-row-adtag {
+    position: relative; /* Allow absolute positioning for buttons */
+    background-color: inherit; /* Ensure no hover background color changes */
+    transition: background-color 0.2s ease; /* Optional smooth transition */
+    border-color: transparent; /* Prevent row borders from showing */
+}
+
+/* Hide action buttons initially */
+.action-buttons-adtag {
+    position: absolute;
+    left: 300px; /* Adjust position relative to the row */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons appear above other elements */
+}
+
+/* Invisible column for buttons */
+.buttons-container-adtag {
+    width: 0; /* Collapse the column width */
+    padding: 0; /* Remove padding */
+    border: none !important; /* Ensure no border is visible */
+    background-color: transparent !important; /* Match background */
+    pointer-events: none; /* Prevent interactions */
+    visibility: hidden; /* Hide content visually */
+}
+
+/* Show buttons when hovering over the row */
+.table-row-adtag:hover .action-buttons-adtag {
+    display: flex;
+    visibility: visible;
+    pointer-events: auto; /* Enable interaction with buttons */
+}
+
+/* Remove hover effects for the invisible column */
+.table-row-adtag td:last-child {
+    pointer-events: none; /* Disable interactions for the invisible column */
+    border: none !important; /* Remove borders */
+    background-color: transparent !important; /* Match background */
+}
+
+/* Button styling */
+.action-buttons-adtag {
+    font-size: 14px;
+    padding: 4px 6px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.btn-adtag {
+    font-size: 14px;
+    margin-right: 4px;
+    cursor: pointer;}
+
+/* Button hover effect (optional) */
+.action-buttons-adtag .btn-adtag:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Ensure no stripes or borders for invisible column */
+.table-striped-adtag .buttons-container-adtag {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* General Row Styling */
+.table-row-adtag {
+    position: relative; /* Allow absolute positioning for buttons */
+    background-color: inherit; /* Ensure no hover background color changes */
+    transition: background-color 0.2s ease; /* Optional smooth transition */
+    border-color: transparent; /* Prevent row borders from showing */
+}
+
+/* Hide action buttons initially */
+.action-buttons-adtag {
+    position: absolute;
+    left: 30px; /* Adjust position relative to the row */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons appear above other elements */
+}
+
+/* Invisible column for buttons */
+.buttons-container-adtag {
+    width: 0; /* Collapse the column width */
+    padding: 0; /* Remove padding */
+    border: none !important; /* Ensure no border is visible */
+    background-color: transparent !important; /* Match background */
+    pointer-events: none; /* Prevent interactions */
+    visibility: hidden; /* Hide content visually */
+}
+
+/* Show buttons when hovering over the row or buttons */
+.table-row-adtag:hover .action-buttons-adtag,
+.action-buttons-adtag:hover {
+    display: flex;
+    visibility: visible;
+    pointer-events: auto; /* Enable interaction with buttons */
+}
+
+/* Remove hover effects for the invisible column */
+.table-row-adtag td:last-child {
+    pointer-events: none; /* Disable interactions for the invisible column */
+    border: none !important; /* Remove borders */
+    background-color: transparent !important; /* Match background */
+}
+
+/* Button styling */
+.action-buttons-adtag {
+    font-size: 14px;
+    padding: 4px 6px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.btn-adtag {
+    font-size: 14px;
+    margin-right: 4px;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px !important;
+    border-radius: 5px;
+}
+
+
+.btn-del-adtag {
+    font-size: 14px;
+    margin-right: 0px;
+    cursor: pointer;
+    padding: 1px  1px 1px 1px!important;
+    border-radius: 5px;
+}
+
+
+/* Button hover effect (optional) */
+.action-buttons-adtag .btn-adtag:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Ensure no stripes or borders for invisible column */
+.table-striped .buttons-container-adtag {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+
+/* General Row Styling */
+.table-row-adtag {
+    position: relative; /* Allow absolute positioning for buttons */
+    transition: background-color 0.2s ease;
+}
+
+/* Hide action buttons initially */
+.action-buttons-adtag {
+    display:flex ;
+    position: absolute;
+    left : 950px;
+    top: 50%; /* Center vertically in the row */
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons appear above other elements */
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Show buttons when hovering over the row or buttons */
+.table-row-adtag:hover .action-buttons-adtag,
+.action-buttons-adtag:hover {
+    display: flex; /* Make buttons visible */
+    pointer-events: auto; /* Ensure buttons are clickable */
+}
+
+/* Button Styling */
+.action-buttons-adtag {
+    font-size: 14px;
+    padding: 4px 6px;
+    margin-left: 4px; /* Add spacing between buttons */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.btn-adtag {
+
+    font-size: 14px;
+    margin-left: 4px; /* Add spacing between buttons */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+ 
+
+}
+
+.action-buttons-adtag .btn-adtag:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Row Hover Effect */
+.table-row-adtag:hover {
+    background-color: #f9f9f9; /* Optional hover effect for row */
+}
+
+/* Prevent hidden buttons in smaller screens */
+.table-row-adtag {
+    overflow: visible;
+}
+
+/* Ensure no overlap with other rows or content */
+.table {
+    position: relative;
+    z-index: 1; /* Keep rows below buttons */
+}
+
+.modal2-actions-adtag{
+    margin: 10px 10px 0px 10px !important;
+
+}
+
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .action-buttons-adtag {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.5rem; /* Add spacing between stacked buttons */
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .action-buttons-adtag button {
+        width: 100%; /* Make buttons full-width for better usability */
+    }
+}
+
+/* When sidebar is open, adjust the button positioning */

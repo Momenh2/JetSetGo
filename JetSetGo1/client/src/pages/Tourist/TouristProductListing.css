@@ -1,0 +1,265 @@
+/* Product listing container */
+.product-listing {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: space-between; /* Space between search bar and filter button */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.serachFilterbtn{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15.0em;
+    gap: 18px;
+}
+
+/* Search Bar */
+.search-input {
+    width: 550px; 
+    
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Filter Button */
+.filter-button {
+    width:50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+    
+    transition: background-color 0.3s ease;
+}
+
+.addproductbtn{
+    width:50px;
+    height:44px;
+    background-color: #007bff;
+    display:flex;
+    justify-content: center;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    
+    transition: background-color 0.3s ease;
+}
+
+.addproductbtn:hover {
+    background-color: #0056b3;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+/* Filter Panel */
+
+/* Grid container */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Product image */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Product title */
+.product-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Product price */
+.product-price {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Product description */
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Add to Cart button */
+.add-to-cart-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+}
+
+.filter-icon {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.product-rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: black; /* Color of the rating (and the star) */
+}
+
+.star-icon {
+    margin-left: 5px;
+    color: #f39c12; /* Star color */
+}
+
+.price-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px; /* Space between the price display and the slider */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Change text color */
+  }
+  
+  /*.price-display span {
+     /* Make the text bold 
+  }*/
+
+  .price-toggle {
+  display: flex;
+  justify-content: space-between; /* Space between the label and the icon */
+  align-items: center; /* Center vertically */
+  margin-bottom: 8px;
+  cursor: 'pointer';
+  user-select: none ;
+}
+  .rating-toggle{
+  display: flex;
+  justify-content: space-between; /* Space between the label and the icon */
+  align-items: center; /* Center vertically */
+  
+  margin-bottom: 8px;
+  margin-top: 20px;
+  cursor: 'pointer';
+   user-select: none ;
+}
+
+.toggle-arrow {
+  display: 'flex'; 
+  align-items: 'center';
+  cursor: pointer; /* Change cursor to pointer */
+  color: #007bff; /* Change color of the arrow */
+}
+
+.toggle-arrow:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.rating-div{
+    padding:0px 8px;
+}
+
+.price-div{
+    padding:0px 8px;
+}
+
+/* archive */
+
+.archivebtn {
+    background-color: #ff9f43;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.product-card.selectable {
+    position: relative;
+}
+
+.archive-select-circle {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* To show when selected */
+.archive-select-circle.selected {
+    background-color: #007bff;
+}
+
+.archived-product {
+    position: relative;
+  }
+  
+   .archivedoverlay {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; */
+    background-color: rgba(128, 128, 128, 0.6);
+  } 
+  
+  
+  
+  
+  
+
+  
+  
